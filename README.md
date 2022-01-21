@@ -1,4 +1,4 @@
-# Welcome to [TriniCorvalan](trini.4595@gmail.com)'s Job Application!
+# Welcome to [TriniCorvalan](mailto:trini.4595@gmail.com)'s Job Application!
 
 ## Briefing
 
