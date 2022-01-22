@@ -9,4 +9,14 @@ class Portfolio
   def initialize(*stocks)
     @stocks = stocks
   end
+
+  def profit(from, to)
+    from_date_arr = from.split("-").map(&:to_i) # convert de string date in an array of integers with year, month and day values
+    start_date = Time.new(from_date_arr[2], from_date_arr[1], from_date_arr[0]) # convert the array of integers with the date values in Time object
+
+    to_date_arr = to.split("-").map(&:to_i)
+    end_date = Time.new(to_date_arr[2], to_date_arr[1], to_date_arr[0])
+
+    @stocks.inject(0) { |acc, stock| acc + (stock.price(end_date) - stock.price(start_date)) } # regular profit method as the sum of stock's price differences between given dates
+  end  
 end
