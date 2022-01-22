@@ -14,7 +14,7 @@ The implemented solution uses Ruby to create Stock, Portfolio and the requested 
 The solution is placed in app/solution.rb file. It contains:
   - Stock class with price method defined. 
     _For the purposes of this exercise, price gives a random float value. To put it into practice, it would be necessary to request the historical values of the stocks prices according to the given date._
-  - Portfolio class with profit method defined with annualized option.
+  - Portfolio class with **profit** method defined with **annualized** option.
     - The regular profit is the sum of stock's price differences between given dates.
     - If annualized is given, the return is calculated according to the relative revenue and the relative time formula.
     - In both cases, it returns a float value rounded with 2 digits for readability.
